@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerHomePage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Services"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCleaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cleaning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btnConstruction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Construction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCleaning" />
+
+    <Button
+        android:id="@+id/btnBeauty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beauty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConstruction" />
+
+    <Button
+        android:id="@+id/btnRepair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Repairs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBeauty" />
+
+    <Button
+        android:id="@+id/btnPainting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Painting"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRepair" />
+
+    <Button
+        android:id="@+id/btnSpecialService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Special Service"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPainting" />
+
+    <Button
+        android:id="@+id/btnLogoutC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSpecialService" />
+</androidx.constraintlayout.widget.ConstraintLayout>
