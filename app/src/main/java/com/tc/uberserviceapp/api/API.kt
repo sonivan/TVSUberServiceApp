@@ -14,6 +14,11 @@ import java.net.HttpURLConnection
 import java.net.URL
 
 class API(val target: String) : LoginService, JobService, BookingService {
+    companion object
+    {
+        val Instance = API("http://localhost")
+    }
+
     override val isLoggedIn: Boolean
         get() = _isLoggedIn
 
